@@ -16,10 +16,10 @@ Long story short, you only need to define a form partial for each controller in 
 
 Your controllers can provide variables to modify the behaviour of your default views. These variables are accessed through a vogue helper.
 
-class Admin::UserController < Admin::BaseController
-  resource_controller
-  vogue :name => "User Account", :scaffold => "layouts/admin"
-end
+    class Admin::UserController < Admin::BaseController
+      resource_controller
+      vogue :name => "User Account", :scaffold => "layouts/admin"
+    end
 
 /app/views/layout/vogue/edit.html.erb
 
@@ -60,25 +60,25 @@ The :from attribute defines a method name which returns the array selections to 
 
 Dropdowns are defined in the file lib/dropdowns.rb. Any options passed to select_field are also passed to the corresponding method in this class.
 
-class Dropdowns < Vogue::Dropdowns
+    class Dropdowns < Vogue::Dropdowns
 
-    def eu_countries(options = {})
-      Rails.cache("eu_countries_by_name") { Country.order(:name).eu.all }
-    end
-  
-    def plans(options = {})
-      if options.delete(:type) == :free
-        Plan.order(:name).free.all
-      else
-        Plan.order(:name).all
+      def eu_countries(options = {})
+        Rails.cache("eu_countries_by_name") { Country.order(:name).eu.all }
       end
-    end
+
+      def plans(options = {})
+        if options.delete(:type) == :free
+          Plan.order(:name).free.all
+        else
+          Plan.order(:name).all
+        end
+      end
+
+      def priorities
+        controller.current_user.account.priorities.all
+      end
   
-    def priorities
-      controller.current_user.account.priorities.all
     end
-  
-end
 
 Why? Its damn easy to test, great for re-use, easily cacheable, and your views won't be littered with as much confusing ERB code.
 
