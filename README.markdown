@@ -6,7 +6,7 @@ There are three main ideas behind Vogue:
 
 * Template Inheritance
 * View Simplification
-* Action standardisation.
+* Action standardisation
 
 ## Template Inheritance
 
@@ -102,9 +102,7 @@ Whats even better, you can customise the code it uses in the same way you can cu
 
 We're not talking about using REST in your application. That was _sooo_ Rails 2.0 - so we assume you're already using that. We're talking about defining standard ways in which your application responds to XML, JSON, JS, or whatever requests. 
 
-XML/JSON POSTs should ALWAYS return either 201 or 422 errors, and should always return the object with its location, or the list of errors.
-
-Vogue was initially a fork of `resource_controller`, but has grown a bit since then. It now can work with `resource_controller`, however it's not required to use Vogue.
+XML/JSON POSTs should ALWAYS return either 201 or 422 errors, and should always return the object with its location, or the list of errors. Vogue was initially a fork of `resource_controller`, and so this action standardisation leverages resource_controller. If you're not using it, you can't use vogue's action standardisations.
 
 Vogue provides a few extensions to resource_controller:
 
