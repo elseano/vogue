@@ -483,3 +483,39 @@ Rendered _header (4.9ms)
   [4;35;1mPriority Load (0.2ms)[0m   [0mSELECT * FROM "priorities" ORDER BY level asc[0m
 Rendered posts/_form (1.4ms)
 Completed in 17ms (View: 16, DB: 0) | 200 OK [http://test.host/posts/new]
+
+
+Processing PostsController#new (for 0.0.0.0 at 2010-03-31 14:03:07) [GET]
+Rendering new
+Rendered posts/_specific (0.3ms)
+Rendered _sub_header (1.0ms)
+Rendered _header (6.0ms)
+Rendered posts/_form (7.8ms)
+Completed in 25ms (View: 24, DB: 0) | 200 OK [http://test.host/posts/new]
+
+
+Processing PostsController#new (for 0.0.0.0 at 2010-03-31 14:03:07) [GET]
+Rendering new
+Rendered posts/_specific (0.1ms)
+Rendered _sub_header (0.3ms)
+Rendered _header (5.1ms)
+Rendered posts/_form (0.7ms)
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://test.host/posts/new]
+
+
+Processing PostsController#new (for 0.0.0.0 at 2010-03-31 14:03:07) [GET]
+Rendering new
+Rendered posts/_specific (0.1ms)
+Rendered _sub_header (0.4ms)
+Rendered _header (5.1ms)
+Rendered posts/_form (0.7ms)
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://test.host/posts/new]
+
+
+Processing PostsController#new (for 0.0.0.0 at 2010-03-31 14:03:07) [GET]
+Rendering new
+Rendered posts/_specific (0.1ms)
+Rendered _sub_header (0.4ms)
+Rendered _header (5.0ms)
+Rendered posts/_form (0.7ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://test.host/posts/new]

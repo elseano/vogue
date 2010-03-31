@@ -4,8 +4,6 @@ rescue LoadError => e
   require_dependency 'application'
 end
 
-require File.join(File.dirname(__FILE__), "vogue/dropdowns")
-
 module Vogue
   # cattr_accessor :pagination
   # self.pagination = defined?(WillPaginate)
@@ -30,7 +28,6 @@ module Vogue
         self.vogue_data = options
         
         require File.join(File.dirname(__FILE__), "vogue/helpers")
-        require File.join(File.dirname(__FILE__), "vogue/form_builder")
         require File.join(File.dirname(__FILE__), "vogue/partial_locator")
         require File.join(File.dirname(__FILE__), "vogue/template_locator")
         

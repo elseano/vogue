@@ -46,5 +46,3 @@ Rails::Initializer.run do |config|
     require File.expand_path(File.join(File.dirname(__FILE__), "../../lib/vogue"))
   end
 end
-
-ActionView::Base.default_form_builder = Vogue::FormBuilder
