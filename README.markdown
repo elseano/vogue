@@ -86,7 +86,7 @@ Why? Its damn easy to test, great for re-use, easily cacheable, and your views w
 
 Almost every application we make has some kind of expandable list. "Add Another", "Remove This", its all very repetitive.
 
-    <% form.array_field :tasks, :blank => 1 do |task| %>
+    <% form.field_array_for :tasks, :blank => 1 do |task| %>
       <%= task.text_field :name %>
       <%= task.select_field :priority %>
       <%= task.delete_link "Remove This" %>
@@ -117,7 +117,7 @@ Vogue provides a few extensions to resource_controller:
 Action Sets provide a standard way for you to define how your application responds to various mime-types. For example, many applications now want to provide an XML API, and having to continually provide this in each controller can be a pain.
 
     class Admin::UsersController < Admin::BaseController
-      resource_controller :action_sets => [:js, :json, :xml, :rss]
+      vogue :action_sets => [:js, :json, :xml, :rss]
     end
 
 Action Sets are defined in lib/action_sets/, and would appear like this:
@@ -158,16 +158,16 @@ More superfluousness! Use the will_paginate gem in your config, and this will al
 You can customise this by passing options into the resource_controller statement.
 
     class SomeController < ApplicationController
-      resource_controller :per_page => 20
+      vogue :per_page => 20
     end
 
     class SomeController < ApplicationController
-      resource_controller :pagination => false
+      vogue :pagination => false
     end
 
 Or in your config:
 
-    ResourceController.pagination = false
+    Vogue.pagination = false
 
 
 ## Summary

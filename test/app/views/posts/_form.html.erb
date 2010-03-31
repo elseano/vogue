@@ -1,0 +1,5 @@
+<% form_for Post.new, posts_path, :method => :post do |form| %>
+Name: <%= form.text_field :name %>
+<br/>
+Priority: <%= form.select_field :priority %>
+<% end %>
