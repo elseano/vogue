@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{vogue}
-  s.version = "0.1.0"
+  s.version = "0.2.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Sean St. Quentin"]
-  s.date = %q{2010-03-31}
+  s.date = %q{2010-07-16}
   s.description = %q{Vogue is a handy Rails gem which gives you more mechanisms for reducing your view and controller code as much as possible. It acheives this by encouraging providing additional helper methods in FormBuilder for working with related data, and providing template inheritance. }
   s.email = %q{sean.stquentin@gmail.com}
   s.extra_rdoc_files = [
@@ -30,6 +30,7 @@ Gem::Specification.new do |s|
      "test/README",
      "test/Rakefile",
      "test/app/controllers/application_controller.rb",
+     "test/app/controllers/pants_controller.rb",
      "test/app/controllers/posts_controller.rb",
      "test/app/controllers/priorities_controller.rb",
      "test/app/helpers/application_helper.rb",
@@ -92,23 +93,25 @@ Gem::Specification.new do |s|
      "test/test/blueprint.rb",
      "test/test/fixtures/posts.yml",
      "test/test/fixtures/priorities.yml",
+     "test/test/functional/pants_controller_test.rb",
      "test/test/functional/posts_controller_test.rb",
      "test/test/functional/priorities_controller_test.rb",
      "test/test/performance/browsing_test.rb",
      "test/test/test_helper.rb",
-     "test/test/unit/form_builder_test.rb",
      "test/test/unit/helpers/posts_helper_test.rb",
      "test/test/unit/helpers/priorities_helper_test.rb",
      "test/test/unit/post_test.rb",
-     "test/test/unit/priority_test.rb"
+     "test/test/unit/priority_test.rb",
+     "vogue.gemspec"
   ]
   s.homepage = %q{http://github.com/elseano/vogue}
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
-  s.rubygems_version = %q{1.3.5}
+  s.rubygems_version = %q{1.3.7}
   s.summary = %q{Rails view inheritance, and handy form builder extensions.}
   s.test_files = [
     "test/app/controllers/application_controller.rb",
+     "test/app/controllers/pants_controller.rb",
      "test/app/controllers/posts_controller.rb",
      "test/app/controllers/priorities_controller.rb",
      "test/app/helpers/application_helper.rb",
@@ -133,11 +136,11 @@ Gem::Specification.new do |s|
      "test/db/seeds.rb",
      "test/lib/dropdowns.rb",
      "test/test/blueprint.rb",
+     "test/test/functional/pants_controller_test.rb",
      "test/test/functional/posts_controller_test.rb",
      "test/test/functional/priorities_controller_test.rb",
      "test/test/performance/browsing_test.rb",
      "test/test/test_helper.rb",
-     "test/test/unit/form_builder_test.rb",
      "test/test/unit/helpers/posts_helper_test.rb",
      "test/test/unit/helpers/priorities_helper_test.rb",
      "test/test/unit/post_test.rb",
@@ -148,7 +151,7 @@ Gem::Specification.new do |s|
     current_version = Gem::Specification::CURRENT_SPECIFICATION_VERSION
     s.specification_version = 3
 
-    if Gem::Version.new(Gem::RubyGemsVersion) >= Gem::Version.new('1.2.0') then
+    if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
       s.add_development_dependency(%q<machinist>, [">= 0"])
     else
       s.add_dependency(%q<machinist>, [">= 0"])
