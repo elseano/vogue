@@ -519,3 +519,120 @@ Rendered _sub_header (0.4ms)
 Rendered _header (5.0ms)
 Rendered posts/_form (0.7ms)
 Completed in 16ms (View: 16, DB: 0) | 200 OK [http://test.host/posts/new]
+
+
+Processing PantsController#missing_view (for 0.0.0.0 at 2010-07-16 13:50:18) [GET]
+
+
+Processing PostsController#new (for 0.0.0.0 at 2010-07-16 13:50:19) [GET]
+Rendering new
+Rendered posts/_specific (0.2ms)
+Rendered _sub_header (0.7ms)
+Rendered _header (5.3ms)
+Rendered posts/_form (31.9ms)
+Completed in 48ms (View: 46, DB: 0) | 200 OK [http://test.host/posts/new]
+
+
+Processing PostsController#new (for 0.0.0.0 at 2010-07-16 13:50:19) [GET]
+Rendering new
+Rendered posts/_specific (0.1ms)
+Rendered _sub_header (0.3ms)
+Rendered _header (4.9ms)
+Rendered posts/_form (0.7ms)
+Completed in 16ms (View: 15, DB: 0) | 200 OK [http://test.host/posts/new]
+
+
+Processing PostsController#new (for 0.0.0.0 at 2010-07-16 13:50:19) [GET]
+Rendering new
+Rendered posts/_specific (0.1ms)
+Rendered _sub_header (0.4ms)
+Rendered _header (5.1ms)
+Rendered posts/_form (0.9ms)
+Completed in 16ms (View: 15, DB: 0) | 200 OK [http://test.host/posts/new]
+
+
+Processing PostsController#new (for 0.0.0.0 at 2010-07-16 13:50:19) [GET]
+Rendering new
+Rendered posts/_specific (0.1ms)
+Rendered _sub_header (0.4ms)
+Rendered _header (5.2ms)
+Rendered posts/_form (0.7ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://test.host/posts/new]
+
+
+Processing PantsController#no_view_method (for 0.0.0.0 at 2010-07-16 13:50:31) [GET]
+
+
+Processing PostsController#new (for 0.0.0.0 at 2010-07-16 13:50:31) [GET]
+Rendering new
+Rendered posts/_specific (0.2ms)
+Rendered _sub_header (0.7ms)
+Rendered _header (5.1ms)
+Rendered posts/_form (7.9ms)
+Completed in 25ms (View: 23, DB: 0) | 200 OK [http://test.host/posts/new]
+
+
+Processing PostsController#new (for 0.0.0.0 at 2010-07-16 13:50:32) [GET]
+Rendering new
+Rendered posts/_specific (0.1ms)
+Rendered _sub_header (0.3ms)
+Rendered _header (4.9ms)
+Rendered posts/_form (0.7ms)
+Completed in 14ms (View: 14, DB: 0) | 200 OK [http://test.host/posts/new]
+
+
+Processing PostsController#new (for 0.0.0.0 at 2010-07-16 13:50:32) [GET]
+Rendering new
+Rendered posts/_specific (0.1ms)
+Rendered _sub_header (0.3ms)
+Rendered _header (5.1ms)
+Rendered posts/_form (0.8ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://test.host/posts/new]
+
+
+Processing PostsController#new (for 0.0.0.0 at 2010-07-16 13:50:32) [GET]
+Rendering new
+Rendered posts/_specific (0.1ms)
+Rendered _sub_header (0.3ms)
+Rendered _header (4.9ms)
+Rendered posts/_form (0.7ms)
+Completed in 16ms (View: 15, DB: 0) | 200 OK [http://test.host/posts/new]
+
+
+Processing PantsController#no_view_method (for 0.0.0.0 at 2010-07-16 13:51:32) [GET]
+
+
+Processing PostsController#new (for 0.0.0.0 at 2010-07-16 13:51:32) [GET]
+Rendering new
+Rendered posts/_specific (0.2ms)
+Rendered _sub_header (0.8ms)
+Rendered _header (5.6ms)
+Rendered posts/_form (7.5ms)
+Completed in 25ms (View: 24, DB: 0) | 200 OK [http://test.host/posts/new]
+
+
+Processing PostsController#new (for 0.0.0.0 at 2010-07-16 13:51:32) [GET]
+Rendering new
+Rendered posts/_specific (0.1ms)
+Rendered _sub_header (0.3ms)
+Rendered _header (5.1ms)
+Rendered posts/_form (0.7ms)
+Completed in 15ms (View: 14, DB: 0) | 200 OK [http://test.host/posts/new]
+
+
+Processing PostsController#new (for 0.0.0.0 at 2010-07-16 13:51:32) [GET]
+Rendering new
+Rendered posts/_specific (0.1ms)
+Rendered _sub_header (0.3ms)
+Rendered _header (5.1ms)
+Rendered posts/_form (0.7ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://test.host/posts/new]
+
+
+Processing PostsController#new (for 0.0.0.0 at 2010-07-16 13:51:32) [GET]
+Rendering new
+Rendered posts/_specific (0.1ms)
+Rendered _sub_header (0.4ms)
+Rendered _header (5.0ms)
+Rendered posts/_form (0.7ms)
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://test.host/posts/new]

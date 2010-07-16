@@ -7,7 +7,7 @@ module Vogue
     # Use dynamic scaffold fallback if a template can't be found in the view paths.
     def default_template(action_name = self.action_name)
       view_paths.find_template(default_template_name(action_name), default_template_format)
-    rescue ActionView::MissingTemplate
+    rescue ActionView::MissingTemplate => ex
       raise if self.vogue(:root).blank?
       action_name = "index" if action_name.blank?
       
@@ -16,7 +16,12 @@ module Vogue
         scaffold_paths.unshift(path)
       end
       
-      scaffold_paths.find_template(action_name, default_template_format)
+      begin
+        scaffold_paths.find_template(action_name, default_template_format)
+      rescue ActionView::MissingTemplate
+        raise ex
+      end
+      
     end
   end
 end
